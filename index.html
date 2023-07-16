@@ -1,0 +1,87 @@
+<!-- Q2. Imagine you are a web developer working for a creative agency that specializes in building visually appealing and interactive websites. The agency has recently received a client request to create a landing page similar to the design of the one-page website: https://www.getonecard.app/. The client wants to showcase a video prominently on the page to engage visitors.
+
+Your task is to create a simple webpage that replicates the one-page landing page design, including a responsive layout and an HTML video. The below images are for your reference. Some browsers don’t allow you to play videos without the controls attribute. So, you can add controls here, we will learn how to play a video without the controls attribute in the later sections  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OneCard - India's best metal credit card</title>
+    <link rel="shortcut icon" href="favicon_oneCard.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="brand_logo">
+        <img src="Assets/Images/Brand_logo.svg" alt="" />
+      </div>
+      <div class="nav_link_container">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="#" class="nav-link">About Us</a>
+        <a href="#" class="nav-link">Careers</a>
+        <a href="#" class="nav-link">Offers</a>
+        <a href="#" class="nav-link">Blog</a>
+        <a href="#" class="nav-link">FAQs</a>
+        <a href="#" class="nav-link">Contact Us</a>
+      </div>
+      <!-- Small Device Nav Bar / Hamburger  -->
+      <div class="small_device_nav-bar">
+        <i class="fa-solid fa-bars hamburger_icon"></i>
+      </div>
+      <a href="#" ><button class="apply_now">Apply Now</button></a>
+     
+    </nav>
+    <main>
+      <!-- ===================
+            Hero Section
+        =======================-->
+      <section class="hero_section">
+        <div class="hero_text_container">
+          <div class="say_hi_text"><span>Say Hi to</span></div>
+          <div class="onecard_text"><span>OneCard</span></div>
+          <div class="co-brand_text"><span>Co-branded Card Issuers:</span></div>
+          <div class="co-brand_image">
+            <img
+              src="Assets/Images/Banking_partners_24thJan_dark__.png"
+              alt=""
+            />
+          </div>
+          <div class="few_lines_onecard">
+            <span
+              >India's best metal credit card. Built with full-stack tech.
+              Backed by the principles of simplicity, transparency, and giving
+              back control to the user.</span
+            >
+          </div>
+          <div class="hero_apply_now_button">
+            <a href=""><img src="Assets/Images/cta_apply_now.svg" alt=""></a>
+          </div>
+        </div>
+
+        <div class="hero_video_container">
+           <video src="Assets/Videos/Hero_Section_Video.mp4" autoplay muted loop></video>
+        </div>
+      </section>
+
+      <!-- ===================
+            Fees Section
+        =======================-->
+      <section class="fees_section">
+        <div class="fees_container">
+          <span id="hidden_fees">No Hidden Fees Ever</span>
+          <span>No Joning Fess.</span>
+          <span>No Annual Fees.</span>
+          <span>No Reward Redemption Fees.</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
